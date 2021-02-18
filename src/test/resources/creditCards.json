@@ -1,0 +1,332 @@
+{
+  "_links": {
+    "self": {
+      "href": "https://api.qa.fitpay.ninja/users/132fc356-a6ab-4abe-867d-86c493a607cc/creditCards?limit=10&offset=0"
+    }
+  },
+  "limit": 10,
+  "offset": 0,
+  "totalResults": 2,
+  "results": [
+    {
+      "_links": {
+        "self": {
+          "href": "https://api.qa.fitpay.ninja/users/132fc356-a6ab-4abe-867d-86c493a607cc/creditCards/5f9e5291-74a2-4b15-a3fb-18e5768c3a3e"
+        },
+        "webapp.card": {
+          "href": "https://webapp.qa.fitpay.ninja/wallet/5f9e5291-74a2-4b15-a3fb-18e5768c3a3e?config={config}",
+          "templated": true
+        }
+      },
+      "creditCardId": "5f9e5291-74a2-4b15-a3fb-18e5768c3a3e",
+      "userId": "132fc356-a6ab-4abe-867d-86c493a607cc",
+      "state": "ERROR",
+      "cardType": "MASTERCARD",
+      "externalTokenReference": "ERRsVyyQpkASJjxJGQwTjtSfcnisybEFdTSszEOPqvMTHGKhxNGIgNxuajMPYQde",
+      "tokenLastFour": "6529",
+      "cardMetaData": {
+        "labelColor": "ffffff",
+        "foregroundColor": "ffffff",
+        "issuerName": "FitBank",
+        "shortDescription": "FitPay Debit MasterCard",
+        "longDescription": "FitPay Debit Mastercard with fancy card art",
+        "contactUrl": "https://support.fit-pay.com",
+        "contactPhone": "303-123-1234",
+        "contactEmail": "support@fit-pay.com",
+        "termsAndConditionsUrl": "https://s3.amazonaws.com/fpctrl-terms-content/terms/en.html",
+        "privacyPolicyUrl": "https://s3.amazonaws.com/fpctrl-terms-content/privacy/en.html",
+        "brandLogo": [
+          {
+            "_links": {
+              "self": {
+                "href": "https://api.qa.fitpay.ninja/assets?assetId=1cb6565cb3bd84067d4628c46b71c8e4b26ace52&adapterId=1131178c-aab5-438b-ab9d-a6572cb64c8c&adapterData=501&w=-1&h=-1&rc=false"
+              }
+            },
+            "mimeType": "image/png",
+            "height": "191",
+            "width": "256"
+          },
+          {
+            "_links": {
+              "self": {
+                "href": "https://api.qa.fitpay.ninja/assets?assetId=8de43bebc9fb117086370b3f080974b95bd4076a&adapterId=1131178c-aab5-438b-ab9d-a6572cb64c8c&adapterData=501&w=-1&h=-1&rc=false"
+              }
+            },
+            "mimeType": "image/png",
+            "height": "61",
+            "width": "102"
+          },
+          {
+            "_links": {
+              "self": {
+                "href": "https://api.qa.fitpay.ninja/assets?assetId=b00c2d534193a199055600d9e07254745060fa8f&adapterId=1131178c-aab5-438b-ab9d-a6572cb64c8c&adapterData=501&w=-1&h=-1&rc=false"
+              }
+            },
+            "mimeType": "image/png",
+            "height": "35",
+            "width": "58"
+          }
+        ],
+        "cardBackground": [
+          {
+            "_links": {
+              "self": {
+                "href": "https://api.qa.fitpay.ninja/assets?assetId=077b80c2c0d50594eb7d8e4c92d0a30af183d3c0&adapterId=1131178c-aab5-438b-ab9d-a6572cb64c8c&adapterData=507&w=-1&h=-1&rc=false"
+              }
+            },
+            "mimeType": "image/png",
+            "height": "969",
+            "width": "1536"
+          }
+        ],
+        "cardBackgroundCombined": [
+          {
+            "_links": {
+              "self": {
+                "href": "https://api.qa.fitpay.ninja/assets?assetId=077b80c2c0d50594eb7d8e4c92d0a30af183d3c0&adapterId=1131178c-aab5-438b-ab9d-a6572cb64c8c&adapterData=507&w=-1&h=-1&rc=false"
+              }
+            },
+            "mimeType": "image/png",
+            "height": "969",
+            "width": "1536"
+          }
+        ],
+        "cardBackgroundCombinedEmbossed": [
+          {
+            "_links": {
+              "self": {
+                "href": "https://api.qa.fitpay.ninja/assets?assetId=077b80c2c0d50594eb7d8e4c92d0a30af183d3c0&adapterId=1131178c-aab5-438b-ab9d-a6572cb64c8c&adapterData=507&w=-1&w=1536&h=-1&h=969&rc=false&rc=false&embossedText=%E2%80%A2%E2%80%A2%E2%80%A2%E2%80%A2+3115&embossedForegroundColor=ffffff&fs=-1&txs=0.900000&tys=0.125000&fn=Arial&fb=true"
+              }
+            },
+            "mimeType": "image/png",
+            "height": "969",
+            "width": "1536"
+          }
+        ],
+        "coBrandLogo": [
+          {
+            "_links": {
+              "self": {
+                "href": "https://api.qa.fitpay.ninja/assets?assetId=077b80c2c0d50594eb7d8e4c92d0a30af183d3c0&adapterId=1131178c-aab5-438b-ab9d-a6572cb64c8c&adapterData=507&w=-1&h=-1&rc=false"
+              }
+            },
+            "mimeType": "image/png",
+            "height": "969",
+            "width": "1536"
+          }
+        ],
+        "icon": [
+          {
+            "_links": {
+              "self": {
+                "href": "https://api.qa.fitpay.ninja/assets?assetId=a8945f403e6815ee2cb8481c4c927579e823d8b7&adapterId=1131178c-aab5-438b-ab9d-a6572cb64c8c&adapterData=2&w=-1&h=-1&rc=false"
+              }
+            },
+            "mimeType": "image/jpeg",
+            "height": "1024",
+            "width": "1024"
+          },
+          {
+            "_links": {
+              "self": {
+                "href": "https://api.qa.fitpay.ninja/assets?assetId=f7ef6b835512a205115f554bfc9162336fd2b1ef&adapterId=1131178c-aab5-438b-ab9d-a6572cb64c8c&adapterData=2&w=-1&h=-1&rc=false"
+              }
+            },
+            "mimeType": "image/png",
+            "height": "64",
+            "width": "64"
+          }
+        ],
+        "issuerLogo": [
+          {
+            "_links": {
+              "self": {
+                "href": "https://api.qa.fitpay.ninja/assets?assetId=077b80c2c0d50594eb7d8e4c92d0a30af183d3c0&adapterId=1131178c-aab5-438b-ab9d-a6572cb64c8c&adapterData=507&w=-1&h=-1&rc=false"
+              }
+            },
+            "mimeType": "image/png",
+            "height": "969",
+            "width": "1536"
+          }
+        ]
+      },
+      "targetDeviceId": "3ea2b702-2002-459f-a36c-883d967225aa",
+      "targetDeviceType": "fitpay.tokenization.device.model.Device",
+      "deviceRelationships": [],
+      "encryptedData": {
+        "encryptedDataSkipped": "encryptedData has been skipped, no fp-key-id specified"
+      },
+      "createdTs": "2021-02-17T17:59:20.170Z",
+      "createdTsEpoch": 1613584760170,
+      "lastModifiedTs": "2021-02-17T18:09:25.534Z",
+      "lastModifiedTsEpoch": 1613585365534
+    },
+    {
+      "_links": {
+        "self": {
+          "href": "https://api.qa.fitpay.ninja/users/132fc356-a6ab-4abe-867d-86c493a607cc/creditCards/9414b48b-ed07-4731-abc7-4de7d0d0d542"
+        },
+        "webapp.card": {
+          "href": "https://webapp.qa.fitpay.ninja/wallet/9414b48b-ed07-4731-abc7-4de7d0d0d542?config={config}",
+          "templated": true
+        }
+      },
+      "creditCardId": "9414b48b-ed07-4731-abc7-4de7d0d0d542",
+      "userId": "132fc356-a6ab-4abe-867d-86c493a607cc",
+      "state": "ACTIVE",
+      "cardType": "MASTERCARD",
+      "externalTokenReference": "SFEQzHEmizsNhTljWYhexEVmSnKmqEPQAXyKsiVoKjNEkBxuuxBQTFWqwNpmmvDz",
+      "tokenLastFour": "6985",
+      "cardMetaData": {
+        "labelColor": "ffffff",
+        "foregroundColor": "ffffff",
+        "issuerName": "FitBank",
+        "shortDescription": "FitPay Debit MasterCard",
+        "longDescription": "FitPay Debit Mastercard with fancy card art",
+        "contactUrl": "https://support.fit-pay.com",
+        "contactPhone": "303-123-1234",
+        "contactEmail": "support@fit-pay.com",
+        "termsAndConditionsUrl": "https://s3.amazonaws.com/fpctrl-terms-content/terms/en.html",
+        "privacyPolicyUrl": "https://s3.amazonaws.com/fpctrl-terms-content/privacy/en.html",
+        "brandLogo": [
+          {
+            "_links": {
+              "self": {
+                "href": "https://api.qa.fitpay.ninja/assets?assetId=1cb6565cb3bd84067d4628c46b71c8e4b26ace52&adapterId=1131178c-aab5-438b-ab9d-a6572cb64c8c&adapterData=501&w=-1&h=-1&rc=false"
+              }
+            },
+            "mimeType": "image/png",
+            "height": "191",
+            "width": "256"
+          },
+          {
+            "_links": {
+              "self": {
+                "href": "https://api.qa.fitpay.ninja/assets?assetId=8de43bebc9fb117086370b3f080974b95bd4076a&adapterId=1131178c-aab5-438b-ab9d-a6572cb64c8c&adapterData=501&w=-1&h=-1&rc=false"
+              }
+            },
+            "mimeType": "image/png",
+            "height": "61",
+            "width": "102"
+          },
+          {
+            "_links": {
+              "self": {
+                "href": "https://api.qa.fitpay.ninja/assets?assetId=b00c2d534193a199055600d9e07254745060fa8f&adapterId=1131178c-aab5-438b-ab9d-a6572cb64c8c&adapterData=501&w=-1&h=-1&rc=false"
+              }
+            },
+            "mimeType": "image/png",
+            "height": "35",
+            "width": "58"
+          }
+        ],
+        "cardBackground": [
+          {
+            "_links": {
+              "self": {
+                "href": "https://api.qa.fitpay.ninja/assets?assetId=077b80c2c0d50594eb7d8e4c92d0a30af183d3c0&adapterId=1131178c-aab5-438b-ab9d-a6572cb64c8c&adapterData=507&w=-1&h=-1&rc=false"
+              }
+            },
+            "mimeType": "image/png",
+            "height": "969",
+            "width": "1536"
+          }
+        ],
+        "cardBackgroundCombined": [
+          {
+            "_links": {
+              "self": {
+                "href": "https://api.qa.fitpay.ninja/assets?assetId=077b80c2c0d50594eb7d8e4c92d0a30af183d3c0&adapterId=1131178c-aab5-438b-ab9d-a6572cb64c8c&adapterData=507&w=-1&h=-1&rc=false"
+              }
+            },
+            "mimeType": "image/png",
+            "height": "969",
+            "width": "1536"
+          }
+        ],
+        "cardBackgroundCombinedEmbossed": [
+          {
+            "_links": {
+              "self": {
+                "href": "https://api.qa.fitpay.ninja/assets?assetId=077b80c2c0d50594eb7d8e4c92d0a30af183d3c0&adapterId=1131178c-aab5-438b-ab9d-a6572cb64c8c&adapterData=507&w=-1&w=1536&h=-1&h=969&rc=false&rc=false&embossedText=%E2%80%A2%E2%80%A2%E2%80%A2%E2%80%A2+3111&embossedForegroundColor=ffffff&fs=-1&txs=0.900000&tys=0.125000&fn=Arial&fb=true"
+              }
+            },
+            "mimeType": "image/png",
+            "height": "969",
+            "width": "1536"
+          }
+        ],
+        "coBrandLogo": [
+          {
+            "_links": {
+              "self": {
+                "href": "https://api.qa.fitpay.ninja/assets?assetId=077b80c2c0d50594eb7d8e4c92d0a30af183d3c0&adapterId=1131178c-aab5-438b-ab9d-a6572cb64c8c&adapterData=507&w=-1&h=-1&rc=false"
+              }
+            },
+            "mimeType": "image/png",
+            "height": "969",
+            "width": "1536"
+          }
+        ],
+        "icon": [
+          {
+            "_links": {
+              "self": {
+                "href": "https://api.qa.fitpay.ninja/assets?assetId=a8945f403e6815ee2cb8481c4c927579e823d8b7&adapterId=1131178c-aab5-438b-ab9d-a6572cb64c8c&adapterData=2&w=-1&h=-1&rc=false"
+              }
+            },
+            "mimeType": "image/jpeg",
+            "height": "1024",
+            "width": "1024"
+          },
+          {
+            "_links": {
+              "self": {
+                "href": "https://api.qa.fitpay.ninja/assets?assetId=f7ef6b835512a205115f554bfc9162336fd2b1ef&adapterId=1131178c-aab5-438b-ab9d-a6572cb64c8c&adapterData=2&w=-1&h=-1&rc=false"
+              }
+            },
+            "mimeType": "image/png",
+            "height": "64",
+            "width": "64"
+          }
+        ],
+        "issuerLogo": [
+          {
+            "_links": {
+              "self": {
+                "href": "https://api.qa.fitpay.ninja/assets?assetId=077b80c2c0d50594eb7d8e4c92d0a30af183d3c0&adapterId=1131178c-aab5-438b-ab9d-a6572cb64c8c&adapterData=507&w=-1&h=-1&rc=false"
+              }
+            },
+            "mimeType": "image/png",
+            "height": "969",
+            "width": "1536"
+          }
+        ]
+      },
+      "targetDeviceId": "3ea2b702-2002-459f-a36c-883d967225aa",
+      "targetDeviceType": "fitpay.tokenization.device.model.Device",
+      "termsAssetId": "83002f07-f5a0-4294-b674-3f94e2f1c508",
+      "termsAssetReferences": [
+        {
+          "_links": {
+            "self": {
+              "href": "https://fpctrl-prod-assetcache-us-east-1.s3-accelerate.amazonaws.com/qa-20200305/2c8a7f38d95e03a62240ef962759c534c9ccc3ef8a4d9705e841f58a490463b5"
+            }
+          },
+          "mimeType": "text/html"
+        }
+      ],
+      "deviceRelationships": [],
+      "encryptedData": {
+        "encryptedDataSkipped": "encryptedData has been skipped, no fp-key-id specified"
+      },
+      "createdTs": "2021-02-17T17:59:20.160Z",
+      "createdTsEpoch": 1613584760160,
+      "lastModifiedTs": "2021-02-17T17:59:42.204Z",
+      "lastModifiedTsEpoch": 1613584782204,
+      "eligibilityExpiration": "2021-02-17T18:14:20.267Z",
+      "eligibilityExpirationEpoch": 1613585660267,
+      "notEligibleReasons": []
+    }
+  ]
+}

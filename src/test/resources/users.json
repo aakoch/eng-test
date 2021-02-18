@@ -1,0 +1,382 @@
+{
+  "_links": {
+    "self": {
+      "href": "https://api.qa.fitpay.ninja/users?limit=10&offset=0"
+    }
+  },
+  "limit": 10,
+  "offset": 0,
+  "totalResults": 10,
+  "results": [
+    {
+      "_links": {
+        "self": {
+          "href": "https://api.qa.fitpay.ninja/users/ea7197cc-a4e5-496c-ba8d-2ef254283aad"
+        },
+        "eventStream.dynamic": {
+          "href": "https://api.qa.fitpay.ninja/users/ea7197cc-a4e5-496c-ba8d-2ef254283aad/eventStream?{&events*}{&redirect}",
+          "templated": true
+        },
+        "creditCards": {
+          "href": "https://api.qa.fitpay.ninja/users/ea7197cc-a4e5-496c-ba8d-2ef254283aad/creditCards"
+        },
+        "devices": {
+          "href": "https://api.qa.fitpay.ninja/users/ea7197cc-a4e5-496c-ba8d-2ef254283aad/devices"
+        },
+        "paymentDevices": {
+          "href": "https://api.qa.fitpay.ninja/users/ea7197cc-a4e5-496c-ba8d-2ef254283aad/devices?capabilities=SE_CONTACTLESS_PAYMENT"
+        },
+        "webapp.wallet": {
+          "href": "https://webapp.qa.fitpay.ninja/wallet?config={config}",
+          "templated": true
+        },
+        "webapp.addCard": {
+          "href": "https://webapp.qa.fitpay.ninja/wallet/add-card?config={config}",
+          "templated": true
+        }
+      },
+      "id": "ea7197cc-a4e5-496c-ba8d-2ef254283aad",
+      "createdTs": "2021-02-17T17:59:18.812Z",
+      "createdTsEpoch": 1613584758812,
+      "lastModifiedTs": "2021-02-17T17:59:18.812Z",
+      "lastModifiedTsEpoch": 1613584758812,
+      "encryptedData": {
+        "encryptedDataSkipped": "encryptedData has been skipped, no fp-key-id specified"
+      },
+      "userId": "ea7197cc-a4e5-496c-ba8d-2ef254283aad"
+    },
+    {
+      "_links": {
+        "self": {
+          "href": "https://api.qa.fitpay.ninja/users/e2a3e976-2c0e-4892-b27f-afcfdf43d03e"
+        },
+        "eventStream.dynamic": {
+          "href": "https://api.qa.fitpay.ninja/users/e2a3e976-2c0e-4892-b27f-afcfdf43d03e/eventStream?{&events*}{&redirect}",
+          "templated": true
+        },
+        "creditCards": {
+          "href": "https://api.qa.fitpay.ninja/users/e2a3e976-2c0e-4892-b27f-afcfdf43d03e/creditCards"
+        },
+        "devices": {
+          "href": "https://api.qa.fitpay.ninja/users/e2a3e976-2c0e-4892-b27f-afcfdf43d03e/devices"
+        },
+        "paymentDevices": {
+          "href": "https://api.qa.fitpay.ninja/users/e2a3e976-2c0e-4892-b27f-afcfdf43d03e/devices?capabilities=SE_CONTACTLESS_PAYMENT"
+        },
+        "webapp.wallet": {
+          "href": "https://webapp.qa.fitpay.ninja/wallet?config={config}",
+          "templated": true
+        },
+        "webapp.addCard": {
+          "href": "https://webapp.qa.fitpay.ninja/wallet/add-card?config={config}",
+          "templated": true
+        }
+      },
+      "id": "e2a3e976-2c0e-4892-b27f-afcfdf43d03e",
+      "createdTs": "2021-02-17T17:59:18.811Z",
+      "createdTsEpoch": 1613584758811,
+      "lastModifiedTs": "2021-02-17T17:59:18.811Z",
+      "lastModifiedTsEpoch": 1613584758811,
+      "encryptedData": {
+        "encryptedDataSkipped": "encryptedData has been skipped, no fp-key-id specified"
+      },
+      "userId": "e2a3e976-2c0e-4892-b27f-afcfdf43d03e"
+    },
+    {
+      "_links": {
+        "self": {
+          "href": "https://api.qa.fitpay.ninja/users/6c0a56d8-bee0-4d45-9a14-19beca13965d"
+        },
+        "eventStream.dynamic": {
+          "href": "https://api.qa.fitpay.ninja/users/6c0a56d8-bee0-4d45-9a14-19beca13965d/eventStream?{&events*}{&redirect}",
+          "templated": true
+        },
+        "creditCards": {
+          "href": "https://api.qa.fitpay.ninja/users/6c0a56d8-bee0-4d45-9a14-19beca13965d/creditCards"
+        },
+        "devices": {
+          "href": "https://api.qa.fitpay.ninja/users/6c0a56d8-bee0-4d45-9a14-19beca13965d/devices"
+        },
+        "paymentDevices": {
+          "href": "https://api.qa.fitpay.ninja/users/6c0a56d8-bee0-4d45-9a14-19beca13965d/devices?capabilities=SE_CONTACTLESS_PAYMENT"
+        },
+        "webapp.wallet": {
+          "href": "https://webapp.qa.fitpay.ninja/wallet?config={config}",
+          "templated": true
+        },
+        "webapp.addCard": {
+          "href": "https://webapp.qa.fitpay.ninja/wallet/add-card?config={config}",
+          "templated": true
+        }
+      },
+      "id": "6c0a56d8-bee0-4d45-9a14-19beca13965d",
+      "createdTs": "2021-02-17T17:59:18.811Z",
+      "createdTsEpoch": 1613584758811,
+      "lastModifiedTs": "2021-02-17T17:59:18.811Z",
+      "lastModifiedTsEpoch": 1613584758811,
+      "encryptedData": {
+        "encryptedDataSkipped": "encryptedData has been skipped, no fp-key-id specified"
+      },
+      "userId": "6c0a56d8-bee0-4d45-9a14-19beca13965d"
+    },
+    {
+      "_links": {
+        "self": {
+          "href": "https://api.qa.fitpay.ninja/users/8451901d-1f83-4efb-b03e-0143df419480"
+        },
+        "eventStream.dynamic": {
+          "href": "https://api.qa.fitpay.ninja/users/8451901d-1f83-4efb-b03e-0143df419480/eventStream?{&events*}{&redirect}",
+          "templated": true
+        },
+        "creditCards": {
+          "href": "https://api.qa.fitpay.ninja/users/8451901d-1f83-4efb-b03e-0143df419480/creditCards"
+        },
+        "devices": {
+          "href": "https://api.qa.fitpay.ninja/users/8451901d-1f83-4efb-b03e-0143df419480/devices"
+        },
+        "paymentDevices": {
+          "href": "https://api.qa.fitpay.ninja/users/8451901d-1f83-4efb-b03e-0143df419480/devices?capabilities=SE_CONTACTLESS_PAYMENT"
+        },
+        "webapp.wallet": {
+          "href": "https://webapp.qa.fitpay.ninja/wallet?config={config}",
+          "templated": true
+        },
+        "webapp.addCard": {
+          "href": "https://webapp.qa.fitpay.ninja/wallet/add-card?config={config}",
+          "templated": true
+        }
+      },
+      "id": "8451901d-1f83-4efb-b03e-0143df419480",
+      "createdTs": "2021-02-17T17:59:18.813Z",
+      "createdTsEpoch": 1613584758813,
+      "lastModifiedTs": "2021-02-17T17:59:18.813Z",
+      "lastModifiedTsEpoch": 1613584758813,
+      "encryptedData": {
+        "encryptedDataSkipped": "encryptedData has been skipped, no fp-key-id specified"
+      },
+      "userId": "8451901d-1f83-4efb-b03e-0143df419480"
+    },
+    {
+      "_links": {
+        "self": {
+          "href": "https://api.qa.fitpay.ninja/users/132fc356-a6ab-4abe-867d-86c493a607cc"
+        },
+        "eventStream.dynamic": {
+          "href": "https://api.qa.fitpay.ninja/users/132fc356-a6ab-4abe-867d-86c493a607cc/eventStream?{&events*}{&redirect}",
+          "templated": true
+        },
+        "creditCards": {
+          "href": "https://api.qa.fitpay.ninja/users/132fc356-a6ab-4abe-867d-86c493a607cc/creditCards"
+        },
+        "devices": {
+          "href": "https://api.qa.fitpay.ninja/users/132fc356-a6ab-4abe-867d-86c493a607cc/devices"
+        },
+        "paymentDevices": {
+          "href": "https://api.qa.fitpay.ninja/users/132fc356-a6ab-4abe-867d-86c493a607cc/devices?capabilities=SE_CONTACTLESS_PAYMENT"
+        },
+        "webapp.wallet": {
+          "href": "https://webapp.qa.fitpay.ninja/wallet?config={config}",
+          "templated": true
+        },
+        "webapp.addCard": {
+          "href": "https://webapp.qa.fitpay.ninja/wallet/add-card?config={config}",
+          "templated": true
+        }
+      },
+      "id": "132fc356-a6ab-4abe-867d-86c493a607cc",
+      "createdTs": "2021-02-17T17:59:18.840Z",
+      "createdTsEpoch": 1613584758840,
+      "lastModifiedTs": "2021-02-17T17:59:18.840Z",
+      "lastModifiedTsEpoch": 1613584758840,
+      "encryptedData": {
+        "encryptedDataSkipped": "encryptedData has been skipped, no fp-key-id specified"
+      },
+      "userId": "132fc356-a6ab-4abe-867d-86c493a607cc"
+    },
+    {
+      "_links": {
+        "self": {
+          "href": "https://api.qa.fitpay.ninja/users/28af2d3f-e4a6-43a9-961e-7e0b494ee575"
+        },
+        "eventStream.dynamic": {
+          "href": "https://api.qa.fitpay.ninja/users/28af2d3f-e4a6-43a9-961e-7e0b494ee575/eventStream?{&events*}{&redirect}",
+          "templated": true
+        },
+        "creditCards": {
+          "href": "https://api.qa.fitpay.ninja/users/28af2d3f-e4a6-43a9-961e-7e0b494ee575/creditCards"
+        },
+        "devices": {
+          "href": "https://api.qa.fitpay.ninja/users/28af2d3f-e4a6-43a9-961e-7e0b494ee575/devices"
+        },
+        "paymentDevices": {
+          "href": "https://api.qa.fitpay.ninja/users/28af2d3f-e4a6-43a9-961e-7e0b494ee575/devices?capabilities=SE_CONTACTLESS_PAYMENT"
+        },
+        "webapp.wallet": {
+          "href": "https://webapp.qa.fitpay.ninja/wallet?config={config}",
+          "templated": true
+        },
+        "webapp.addCard": {
+          "href": "https://webapp.qa.fitpay.ninja/wallet/add-card?config={config}",
+          "templated": true
+        }
+      },
+      "id": "28af2d3f-e4a6-43a9-961e-7e0b494ee575",
+      "createdTs": "2021-02-17T17:59:18.805Z",
+      "createdTsEpoch": 1613584758805,
+      "lastModifiedTs": "2021-02-17T17:59:18.805Z",
+      "lastModifiedTsEpoch": 1613584758805,
+      "encryptedData": {
+        "encryptedDataSkipped": "encryptedData has been skipped, no fp-key-id specified"
+      },
+      "userId": "28af2d3f-e4a6-43a9-961e-7e0b494ee575"
+    },
+    {
+      "_links": {
+        "self": {
+          "href": "https://api.qa.fitpay.ninja/users/f900a8f1-824b-4bc8-b878-23aedec51a60"
+        },
+        "eventStream.dynamic": {
+          "href": "https://api.qa.fitpay.ninja/users/f900a8f1-824b-4bc8-b878-23aedec51a60/eventStream?{&events*}{&redirect}",
+          "templated": true
+        },
+        "creditCards": {
+          "href": "https://api.qa.fitpay.ninja/users/f900a8f1-824b-4bc8-b878-23aedec51a60/creditCards"
+        },
+        "devices": {
+          "href": "https://api.qa.fitpay.ninja/users/f900a8f1-824b-4bc8-b878-23aedec51a60/devices"
+        },
+        "paymentDevices": {
+          "href": "https://api.qa.fitpay.ninja/users/f900a8f1-824b-4bc8-b878-23aedec51a60/devices?capabilities=SE_CONTACTLESS_PAYMENT"
+        },
+        "webapp.wallet": {
+          "href": "https://webapp.qa.fitpay.ninja/wallet?config={config}",
+          "templated": true
+        },
+        "webapp.addCard": {
+          "href": "https://webapp.qa.fitpay.ninja/wallet/add-card?config={config}",
+          "templated": true
+        }
+      },
+      "id": "f900a8f1-824b-4bc8-b878-23aedec51a60",
+      "createdTs": "2021-02-17T17:59:18.813Z",
+      "createdTsEpoch": 1613584758813,
+      "lastModifiedTs": "2021-02-17T17:59:18.813Z",
+      "lastModifiedTsEpoch": 1613584758813,
+      "encryptedData": {
+        "encryptedDataSkipped": "encryptedData has been skipped, no fp-key-id specified"
+      },
+      "userId": "f900a8f1-824b-4bc8-b878-23aedec51a60"
+    },
+    {
+      "_links": {
+        "self": {
+          "href": "https://api.qa.fitpay.ninja/users/e7204ffa-48ca-4c5d-958f-91b18e74b6c7"
+        },
+        "eventStream.dynamic": {
+          "href": "https://api.qa.fitpay.ninja/users/e7204ffa-48ca-4c5d-958f-91b18e74b6c7/eventStream?{&events*}{&redirect}",
+          "templated": true
+        },
+        "creditCards": {
+          "href": "https://api.qa.fitpay.ninja/users/e7204ffa-48ca-4c5d-958f-91b18e74b6c7/creditCards"
+        },
+        "devices": {
+          "href": "https://api.qa.fitpay.ninja/users/e7204ffa-48ca-4c5d-958f-91b18e74b6c7/devices"
+        },
+        "paymentDevices": {
+          "href": "https://api.qa.fitpay.ninja/users/e7204ffa-48ca-4c5d-958f-91b18e74b6c7/devices?capabilities=SE_CONTACTLESS_PAYMENT"
+        },
+        "webapp.wallet": {
+          "href": "https://webapp.qa.fitpay.ninja/wallet?config={config}",
+          "templated": true
+        },
+        "webapp.addCard": {
+          "href": "https://webapp.qa.fitpay.ninja/wallet/add-card?config={config}",
+          "templated": true
+        }
+      },
+      "id": "e7204ffa-48ca-4c5d-958f-91b18e74b6c7",
+      "createdTs": "2021-02-17T17:59:18.831Z",
+      "createdTsEpoch": 1613584758831,
+      "lastModifiedTs": "2021-02-17T17:59:18.831Z",
+      "lastModifiedTsEpoch": 1613584758831,
+      "encryptedData": {
+        "encryptedDataSkipped": "encryptedData has been skipped, no fp-key-id specified"
+      },
+      "userId": "e7204ffa-48ca-4c5d-958f-91b18e74b6c7"
+    },
+    {
+      "_links": {
+        "self": {
+          "href": "https://api.qa.fitpay.ninja/users/b18541dc-8006-4a39-8c2f-a727e9835765"
+        },
+        "eventStream.dynamic": {
+          "href": "https://api.qa.fitpay.ninja/users/b18541dc-8006-4a39-8c2f-a727e9835765/eventStream?{&events*}{&redirect}",
+          "templated": true
+        },
+        "creditCards": {
+          "href": "https://api.qa.fitpay.ninja/users/b18541dc-8006-4a39-8c2f-a727e9835765/creditCards"
+        },
+        "devices": {
+          "href": "https://api.qa.fitpay.ninja/users/b18541dc-8006-4a39-8c2f-a727e9835765/devices"
+        },
+        "paymentDevices": {
+          "href": "https://api.qa.fitpay.ninja/users/b18541dc-8006-4a39-8c2f-a727e9835765/devices?capabilities=SE_CONTACTLESS_PAYMENT"
+        },
+        "webapp.wallet": {
+          "href": "https://webapp.qa.fitpay.ninja/wallet?config={config}",
+          "templated": true
+        },
+        "webapp.addCard": {
+          "href": "https://webapp.qa.fitpay.ninja/wallet/add-card?config={config}",
+          "templated": true
+        }
+      },
+      "id": "b18541dc-8006-4a39-8c2f-a727e9835765",
+      "createdTs": "2021-02-17T17:59:18.806Z",
+      "createdTsEpoch": 1613584758806,
+      "lastModifiedTs": "2021-02-17T17:59:18.806Z",
+      "lastModifiedTsEpoch": 1613584758806,
+      "encryptedData": {
+        "encryptedDataSkipped": "encryptedData has been skipped, no fp-key-id specified"
+      },
+      "userId": "b18541dc-8006-4a39-8c2f-a727e9835765"
+    },
+    {
+      "_links": {
+        "self": {
+          "href": "https://api.qa.fitpay.ninja/users/efd2648d-6fdc-4e8a-8130-b15bcf59318f"
+        },
+        "eventStream.dynamic": {
+          "href": "https://api.qa.fitpay.ninja/users/efd2648d-6fdc-4e8a-8130-b15bcf59318f/eventStream?{&events*}{&redirect}",
+          "templated": true
+        },
+        "creditCards": {
+          "href": "https://api.qa.fitpay.ninja/users/efd2648d-6fdc-4e8a-8130-b15bcf59318f/creditCards"
+        },
+        "devices": {
+          "href": "https://api.qa.fitpay.ninja/users/efd2648d-6fdc-4e8a-8130-b15bcf59318f/devices"
+        },
+        "paymentDevices": {
+          "href": "https://api.qa.fitpay.ninja/users/efd2648d-6fdc-4e8a-8130-b15bcf59318f/devices?capabilities=SE_CONTACTLESS_PAYMENT"
+        },
+        "webapp.wallet": {
+          "href": "https://webapp.qa.fitpay.ninja/wallet?config={config}",
+          "templated": true
+        },
+        "webapp.addCard": {
+          "href": "https://webapp.qa.fitpay.ninja/wallet/add-card?config={config}",
+          "templated": true
+        }
+      },
+      "id": "efd2648d-6fdc-4e8a-8130-b15bcf59318f",
+      "createdTs": "2021-02-17T17:59:18.826Z",
+      "createdTsEpoch": 1613584758826,
+      "lastModifiedTs": "2021-02-17T17:59:18.826Z",
+      "lastModifiedTsEpoch": 1613584758826,
+      "encryptedData": {
+        "encryptedDataSkipped": "encryptedData has been skipped, no fp-key-id specified"
+      },
+      "userId": "efd2648d-6fdc-4e8a-8130-b15bcf59318f"
+    }
+  ]
+}
