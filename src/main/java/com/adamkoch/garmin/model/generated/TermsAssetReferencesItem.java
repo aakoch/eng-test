@@ -1,8 +1,12 @@
 package com.adamkoch.garmin.model.generated;
 
 import com.adamkoch.garmin.model.Links;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonInclude.Include;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+@JsonInclude(Include.NON_NULL)
 public class TermsAssetReferencesItem {
 
   @JsonProperty("_links")
@@ -11,6 +15,7 @@ public class TermsAssetReferencesItem {
   @JsonProperty("mimeType")
   private String mimeType;
 
+  @JsonIgnore
   public Links getLinks() {
     return links;
   }

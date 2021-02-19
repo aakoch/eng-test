@@ -1,8 +1,13 @@
 package com.adamkoch.garmin.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonIgnoreType;
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonInclude.Include;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import java.util.List;
 
+@JsonInclude(Include.NON_NULL)
 public class CreditCardsResponse {
 
   @JsonProperty("totalResults")
@@ -28,6 +33,7 @@ public class CreditCardsResponse {
     this.limit = limit;
   }
 
+  @JsonIgnore
   public Links getLinks() {
     return links;
   }

@@ -2,13 +2,18 @@ package com.adamkoch.garmin.model;
 
 import com.adamkoch.garmin.model.generated.EncryptedData;
 import com.fasterxml.jackson.annotation.JsonAlias;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonInclude.Include;
 import java.util.List;
 import java.util.Map;
 
+@JsonInclude(Include.NON_NULL)
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class UserResponse {
 
-  @JsonAlias("_links")
-  private Map links;
+
   private int limit;
   private int offset;
   private int totalResults;
@@ -36,14 +41,6 @@ public class UserResponse {
 
   public String getUserId() {
     return userId;
-  }
-
-  public Map getLinks() {
-    return links;
-  }
-
-  public void setLinks(final Map links) {
-    this.links = links;
   }
 
   public int getLimit() {

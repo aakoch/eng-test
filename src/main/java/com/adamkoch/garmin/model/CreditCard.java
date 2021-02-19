@@ -3,239 +3,234 @@ package com.adamkoch.garmin.model;
 import com.adamkoch.garmin.model.generated.CardMetaData;
 import com.adamkoch.garmin.model.generated.EncryptedData;
 import com.adamkoch.garmin.model.generated.TermsAssetReferencesItem;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonInclude.Include;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import java.util.List;
+import org.springframework.hateoas.RepresentationModel;
 
-public class CreditCard{
+@JsonInclude(Include.NON_NULL)
+@JsonIgnoreProperties(ignoreUnknown = true)
+public class CreditCard extends RepresentationModel {
 
-	@JsonProperty("createdTsEpoch")
-	private long createdTsEpoch;
+  @JsonProperty("createdTsEpoch")
+  private long createdTsEpoch;
 
-	@JsonProperty("tokenLastFour")
-	private String tokenLastFour;
+  @JsonProperty("tokenLastFour")
+  private String tokenLastFour;
 
-	@JsonProperty("externalTokenReference")
-	private String externalTokenReference;
+  @JsonProperty("externalTokenReference")
+  private String externalTokenReference;
 
-	@JsonProperty("_links")
-	private Links links;
+  @JsonProperty("deviceRelationships")
+  private List<Object> deviceRelationships;
 
-	@JsonProperty("deviceRelationships")
-	private List<Object> deviceRelationships;
+  @JsonProperty("notEligibleReasons")
+  private List<Object> notEligibleReasons;
 
-	@JsonProperty("notEligibleReasons")
-	private List<Object> notEligibleReasons;
+  @JsonProperty("cardType")
+  private String cardType;
 
-	@JsonProperty("cardType")
-	private String cardType;
+  @JsonProperty("creditCardId")
+  private String creditCardId;
 
-	@JsonProperty("creditCardId")
-	private String creditCardId;
+  @JsonProperty("termsAssetId")
+  private String termsAssetId;
 
-	@JsonProperty("termsAssetId")
-	private String termsAssetId;
+  @JsonProperty("lastModifiedTsEpoch")
+  private long lastModifiedTsEpoch;
 
-	@JsonProperty("lastModifiedTsEpoch")
-	private long lastModifiedTsEpoch;
+  @JsonProperty("userId")
+  private String userId;
 
-	@JsonProperty("userId")
-	private String userId;
+  @JsonProperty("createdTs")
+  private String createdTs;
 
-	@JsonProperty("createdTs")
-	private String createdTs;
+  @JsonProperty("lastModifiedTs")
+  private String lastModifiedTs;
 
-	@JsonProperty("lastModifiedTs")
-	private String lastModifiedTs;
+  @JsonProperty("eligibilityExpirationEpoch")
+  private long eligibilityExpirationEpoch;
 
-	@JsonProperty("eligibilityExpirationEpoch")
-	private long eligibilityExpirationEpoch;
+  @JsonProperty("targetDeviceType")
+  private String targetDeviceType;
 
-	@JsonProperty("targetDeviceType")
-	private String targetDeviceType;
+  @JsonProperty("targetDeviceId")
+  private String targetDeviceId;
 
-	@JsonProperty("targetDeviceId")
-	private String targetDeviceId;
+  @JsonProperty("termsAssetReferences")
+  private List<TermsAssetReferencesItem> termsAssetReferences;
 
-	@JsonProperty("termsAssetReferences")
-	private List<TermsAssetReferencesItem> termsAssetReferences;
+  @JsonProperty("encryptedData")
+  private EncryptedData encryptedData;
 
-	@JsonProperty("encryptedData")
-	private EncryptedData encryptedData;
+  @JsonProperty("state")
+  private String state;
 
-	@JsonProperty("state")
-	private String state;
+  @JsonProperty("cardMetaData")
+  private CardMetaData cardMetaData;
 
-	@JsonProperty("cardMetaData")
-	private CardMetaData cardMetaData;
+  @JsonProperty("eligibilityExpiration")
+  private String eligibilityExpiration;
 
-	@JsonProperty("eligibilityExpiration")
-	private String eligibilityExpiration;
+  public CardMetaData getCardMetaData() {
+    return cardMetaData;
+  }
 
-	public void setCreatedTsEpoch(long createdTsEpoch){
-		this.createdTsEpoch = createdTsEpoch;
-	}
+  public void setCardMetaData(CardMetaData cardMetaData) {
+    this.cardMetaData = cardMetaData;
+  }
 
-	public long getCreatedTsEpoch(){
-		return createdTsEpoch;
-	}
+  public String getCardType() {
+    return cardType;
+  }
 
-	public void setTokenLastFour(String tokenLastFour){
-		this.tokenLastFour = tokenLastFour;
-	}
+  public void setCardType(String cardType) {
+    this.cardType = cardType;
+  }
 
-	public String getTokenLastFour(){
-		return tokenLastFour;
-	}
+  public String getCreatedTs() {
+    return createdTs;
+  }
 
-	public void setExternalTokenReference(String externalTokenReference){
-		this.externalTokenReference = externalTokenReference;
-	}
+  public void setCreatedTs(String createdTs) {
+    this.createdTs = createdTs;
+  }
 
-	public String getExternalTokenReference(){
-		return externalTokenReference;
-	}
+  public long getCreatedTsEpoch() {
+    return createdTsEpoch;
+  }
 
-	public void setLinks(Links links){
-		this.links = links;
-	}
+  public void setCreatedTsEpoch(long createdTsEpoch) {
+    this.createdTsEpoch = createdTsEpoch;
+  }
 
-	public Links getLinks(){
-		return links;
-	}
-
-	public void setDeviceRelationships(List<Object> deviceRelationships){
-		this.deviceRelationships = deviceRelationships;
-	}
-
-	public List<Object> getDeviceRelationships(){
-		return deviceRelationships;
-	}
-
-	public void setNotEligibleReasons(List<Object> notEligibleReasons){
-		this.notEligibleReasons = notEligibleReasons;
-	}
-
-	public List<Object> getNotEligibleReasons(){
-		return notEligibleReasons;
-	}
-
-	public void setCardType(String cardType){
-		this.cardType = cardType;
-	}
-
-	public String getCardType(){
-		return cardType;
-	}
-
-	public void setCreditCardId(String creditCardId){
-		this.creditCardId = creditCardId;
-	}
-
-	public String getCreditCardId(){
-		return creditCardId;
-	}
-
-	public void setTermsAssetId(String termsAssetId){
-		this.termsAssetId = termsAssetId;
-	}
-
-	public String getTermsAssetId(){
-		return termsAssetId;
-	}
-
-	public void setLastModifiedTsEpoch(long lastModifiedTsEpoch){
-		this.lastModifiedTsEpoch = lastModifiedTsEpoch;
-	}
-
-	public long getLastModifiedTsEpoch(){
-		return lastModifiedTsEpoch;
-	}
-
-	public void setUserId(String userId){
-		this.userId = userId;
-	}
-
-	public String getUserId(){
-		return userId;
-	}
-
-	public void setCreatedTs(String createdTs){
-		this.createdTs = createdTs;
-	}
-
-	public String getCreatedTs(){
-		return createdTs;
-	}
-
-	public void setLastModifiedTs(String lastModifiedTs){
-		this.lastModifiedTs = lastModifiedTs;
-	}
-
-	public String getLastModifiedTs(){
-		return lastModifiedTs;
-	}
-
-	public void setEligibilityExpirationEpoch(long eligibilityExpirationEpoch){
-		this.eligibilityExpirationEpoch = eligibilityExpirationEpoch;
-	}
-
-	public long getEligibilityExpirationEpoch(){
-		return eligibilityExpirationEpoch;
-	}
-
-	public void setTargetDeviceType(String targetDeviceType){
-		this.targetDeviceType = targetDeviceType;
-	}
-
-	public String getTargetDeviceType(){
-		return targetDeviceType;
-	}
-
-	public void setTargetDeviceId(String targetDeviceId){
-		this.targetDeviceId = targetDeviceId;
-	}
-
-	public String getTargetDeviceId(){
-		return targetDeviceId;
-	}
-
-	public void setTermsAssetReferences(List<TermsAssetReferencesItem> termsAssetReferences){
-		this.termsAssetReferences = termsAssetReferences;
-	}
-
-	public List<TermsAssetReferencesItem> getTermsAssetReferences(){
-		return termsAssetReferences;
-	}
-
-	public void setEncryptedData(EncryptedData encryptedData){
-		this.encryptedData = encryptedData;
-	}
-
-	public EncryptedData getEncryptedData(){
-		return encryptedData;
-	}
-
-	public void setState(String state){
-		this.state = state;
-	}
-
-	public String getState(){
-		return state;
-	}
-
-	public void setCardMetaData(CardMetaData cardMetaData){
-		this.cardMetaData = cardMetaData;
-	}
-
-	public CardMetaData getCardMetaData(){
-		return cardMetaData;
-	}
-
-	public void setEligibilityExpiration(String eligibilityExpiration){
-		this.eligibilityExpiration = eligibilityExpiration;
-	}
-
-	public String getEligibilityExpiration(){
-		return eligibilityExpiration;
-	}
+  public String getCreditCardId() {
+    return creditCardId;
+  }
+
+  public void setCreditCardId(String creditCardId) {
+    this.creditCardId = creditCardId;
+  }
+
+  public List<Object> getDeviceRelationships() {
+    return deviceRelationships;
+  }
+
+  public void setDeviceRelationships(List<Object> deviceRelationships) {
+    this.deviceRelationships = deviceRelationships;
+  }
+
+  public String getEligibilityExpiration() {
+    return eligibilityExpiration;
+  }
+
+  public void setEligibilityExpiration(String eligibilityExpiration) {
+    this.eligibilityExpiration = eligibilityExpiration;
+  }
+
+  public long getEligibilityExpirationEpoch() {
+    return eligibilityExpirationEpoch;
+  }
+
+  public void setEligibilityExpirationEpoch(long eligibilityExpirationEpoch) {
+    this.eligibilityExpirationEpoch = eligibilityExpirationEpoch;
+  }
+
+  public EncryptedData getEncryptedData() {
+    return encryptedData;
+  }
+
+  public void setEncryptedData(EncryptedData encryptedData) {
+    this.encryptedData = encryptedData;
+  }
+
+  public String getExternalTokenReference() {
+    return externalTokenReference;
+  }
+
+  public void setExternalTokenReference(String externalTokenReference) {
+    this.externalTokenReference = externalTokenReference;
+  }
+
+  public String getLastModifiedTs() {
+    return lastModifiedTs;
+  }
+
+  public void setLastModifiedTs(String lastModifiedTs) {
+    this.lastModifiedTs = lastModifiedTs;
+  }
+
+  public long getLastModifiedTsEpoch() {
+    return lastModifiedTsEpoch;
+  }
+
+  public void setLastModifiedTsEpoch(long lastModifiedTsEpoch) {
+    this.lastModifiedTsEpoch = lastModifiedTsEpoch;
+  }
+
+  public List<Object> getNotEligibleReasons() {
+    return notEligibleReasons;
+  }
+
+  public void setNotEligibleReasons(List<Object> notEligibleReasons) {
+    this.notEligibleReasons = notEligibleReasons;
+  }
+
+  public String getState() {
+    return state;
+  }
+
+  public void setState(String state) {
+    this.state = state;
+  }
+
+  public String getTargetDeviceId() {
+    return targetDeviceId;
+  }
+
+  public void setTargetDeviceId(String targetDeviceId) {
+    this.targetDeviceId = targetDeviceId;
+  }
+
+  public String getTargetDeviceType() {
+    return targetDeviceType;
+  }
+
+  public void setTargetDeviceType(String targetDeviceType) {
+    this.targetDeviceType = targetDeviceType;
+  }
+
+  public String getTermsAssetId() {
+    return termsAssetId;
+  }
+
+  public void setTermsAssetId(String termsAssetId) {
+    this.termsAssetId = termsAssetId;
+  }
+
+  public List<TermsAssetReferencesItem> getTermsAssetReferences() {
+    return termsAssetReferences;
+  }
+
+  public void setTermsAssetReferences(List<TermsAssetReferencesItem> termsAssetReferences) {
+    this.termsAssetReferences = termsAssetReferences;
+  }
+
+  public String getTokenLastFour() {
+    return tokenLastFour;
+  }
+
+  public void setTokenLastFour(String tokenLastFour) {
+    this.tokenLastFour = tokenLastFour;
+  }
+
+  public String getUserId() {
+    return userId;
+  }
+
+  public void setUserId(String userId) {
+    this.userId = userId;
+  }
 }

@@ -1,13 +1,14 @@
 package com.adamkoch.garmin.model;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonInclude.Include;
 import java.util.List;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.hateoas.RepresentationModel;
 
+@JsonInclude(Include.NON_NULL)
 public class User extends RepresentationModel {
-
-  private static final Logger LOGGER = LogManager.getLogger(User.class);
 
   private String id;
   private List<CreditCard> creditCards;

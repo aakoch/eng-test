@@ -1,8 +1,12 @@
 package com.adamkoch.garmin.model.generated;
 
 import com.adamkoch.garmin.model.Links;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonInclude.Include;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+@JsonInclude(Include.NON_NULL)
 public class CardBackgroundItem {
 
   @JsonProperty("_links")
@@ -25,6 +29,7 @@ public class CardBackgroundItem {
     this.height = height;
   }
 
+  @JsonIgnore
   public Links getLinks() {
     return links;
   }

@@ -1,13 +1,14 @@
 package com.adamkoch.garmin.model.generated;
 
 import com.adamkoch.garmin.model.Links;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonInclude.Include;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import java.util.List;
 
+@JsonInclude(Include.NON_NULL)
 public class CardMetaData {
-
-  @JsonProperty("_links")
-  private Links links;
 
   @JsonProperty("longDescription")
   private String longDescription;
