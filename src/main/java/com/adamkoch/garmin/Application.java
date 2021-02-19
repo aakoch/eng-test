@@ -1,4 +1,4 @@
-package fitpay.engtest;
+package com.adamkoch.garmin;
 
 import static org.apache.logging.log4j.LogManager.*;
 
@@ -10,6 +10,9 @@ import com.adamkoch.garmin.services.RestTokenService;
 import com.adamkoch.garmin.services.RestUserService;
 import com.adamkoch.garmin.services.TokenService;
 import com.adamkoch.garmin.services.UserService;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.util.Properties;
 import org.apache.logging.log4j.Logger;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -53,7 +56,9 @@ public class Application {
     }
 
     @Bean
-    public TokenService tokenService() {
-        return new RestTokenService();
+    public TokenService tokenService() throws IOException {
+        Properties properties = new Properties();
+        properties.load(new FileInputStream("secrets.properties"));
+        return new RestTokenService(properties.getProperty("username"), properties.getProperty("password"));
     }
 }

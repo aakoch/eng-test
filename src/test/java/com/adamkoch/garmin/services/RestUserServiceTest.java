@@ -2,17 +2,12 @@ package com.adamkoch.garmin.services;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-import com.adamkoch.garmin.model.User;
-import java.util.Map;
-import java.util.concurrent.CompletableFuture;
-import java.util.concurrent.ExecutionException;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.util.Properties;
 import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.springframework.boot.json.JsonParserFactory;
-import org.springframework.http.HttpHeaders;
-import org.springframework.web.reactive.function.client.WebClient;
-import reactor.core.publisher.Mono;
 
 class RestUserServiceTest {
 
@@ -20,8 +15,10 @@ class RestUserServiceTest {
   private static String token;
 
   @BeforeAll
-  static void getToken() {
-    tokenService = new RestTokenService();
+  static void getToken() throws IOException {
+    Properties properties = new Properties();
+    properties.load(new FileInputStream("secrets.properties"));
+    tokenService = new RestTokenService(properties.getProperty("username"), properties.getProperty("password"));
     token = tokenService.getToken();
   }
 

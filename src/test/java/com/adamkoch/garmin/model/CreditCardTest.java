@@ -12,7 +12,7 @@ class CreditCardTest {
 
   @Test
   void test() throws IOException {
-    final String s = Files.readString(Path.of("/Users/aakoch/projects/garmin/src/test/resources/creditCards.json"));
+    final String s = Files.readString(Path.of("src/test/resources/creditCards.json"));
 
 
     ObjectMapper mapper = new ObjectMapper();

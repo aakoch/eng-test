@@ -13,7 +13,7 @@ class CardMetaDataTest {
 
   @Test
   void test() throws IOException {
-    final String s = Files.readString(Path.of("/Users/aakoch/projects/garmin/src/test/resources/creditCardMetaData.json"));
+    final String s = Files.readString(Path.of("src/test/resources/creditCardMetaData.json"));
 
 
     ObjectMapper mapper = new ObjectMapper();
