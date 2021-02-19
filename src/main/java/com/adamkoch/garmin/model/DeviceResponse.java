@@ -6,12 +6,11 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonInclude.Include;
 import java.util.Collections;
 import java.util.List;
+import org.springframework.hateoas.RepresentationModel;
 
 @JsonInclude(Include.NON_NULL)
-public class DeviceResponse {
+public class DeviceResponse extends RepresentationModel {
 
-  @JsonAlias("_links")
-  private Links links;
   private int limit;
   private int offset;
   private int totalResults;
@@ -35,15 +34,6 @@ public class DeviceResponse {
     this.limit = limit;
   }
 
-  @JsonIgnore
-  public Links getLinks() {
-    return links;
-  }
-
-  public void setLinks(Links links) {
-    this.links = links;
-  }
-
   public int getOffset() {
     return offset;
   }
@@ -63,7 +53,6 @@ public class DeviceResponse {
   @Override
   public String toString() {
     return "DeviceResponse{" +
-        "links=" + links +
         ", limit=" + limit +
         ", offset=" + offset +
         ", totalResults=" + totalResults +

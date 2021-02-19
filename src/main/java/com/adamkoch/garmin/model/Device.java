@@ -16,10 +16,6 @@ import org.springframework.hateoas.RepresentationModel;
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class Device extends RepresentationModel {
 
-  @JsonAlias("_links")
-  @JsonIgnore
-  private Map links;
-
   private String deviceIdentifier;
   private String deviceType;
   private String manufacturerName;

@@ -1,23 +1,23 @@
 package com.adamkoch.garmin.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonIgnoreType;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonInclude.Include;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import java.util.List;
+import org.springframework.hateoas.RepresentationModel;
 
 @JsonInclude(Include.NON_NULL)
-public class CreditCardsResponse {
+@JsonIgnoreProperties(ignoreUnknown = true)
+public class CreditCardsResponse extends RepresentationModel {
 
   @JsonProperty("totalResults")
   private int totalResults;
 
   @JsonProperty("offset")
   private int offset;
-
-  @JsonProperty("_links")
-  private Links links;
 
   @JsonProperty("limit")
   private int limit;
@@ -31,15 +31,6 @@ public class CreditCardsResponse {
 
   public void setLimit(int limit) {
     this.limit = limit;
-  }
-
-  @JsonIgnore
-  public Links getLinks() {
-    return links;
-  }
-
-  public void setLinks(Links links) {
-    this.links = links;
   }
 
   public int getOffset() {
