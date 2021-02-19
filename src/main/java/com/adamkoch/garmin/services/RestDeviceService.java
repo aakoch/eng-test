@@ -17,7 +17,7 @@ public class RestDeviceService extends AbstractRestService implements DeviceServ
   public CompletableFuture<List<Device>> getDevices(final String token, final String userId,
       final String deviceState) {
     return callService(token, userId, "/devices").thenApply(RestDeviceService::parseResponse).thenApply(devices -> {
-      return devices.stream().filter(device -> device.getState().equals(deviceState)).collect(Collectors.toList());
+      return devices.stream().filter(device -> deviceState == null || device.getState().equals(deviceState)).collect(Collectors.toList());
     });
   }
 

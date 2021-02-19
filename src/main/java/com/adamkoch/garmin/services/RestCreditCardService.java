@@ -16,8 +16,8 @@ public class RestCreditCardService extends AbstractRestService implements Credit
   @Override
   public CompletableFuture<List<CreditCard>> getCreditCards(final String token, final String userId,
       final String creditCardState) {
-    return callService(token, userId, "/creditCards").thenApply(RestCreditCardService::parseResponse).thenApply(devices -> {
-      return devices.stream().filter(creditCard -> creditCard.getState().equals(creditCardState)).collect(Collectors.toList());
+    return callService(token, userId, "/creditCards").thenApply(RestCreditCardService::parseResponse).thenApply(creditCards -> {
+      return creditCards.stream().filter(creditCard -> creditCardState == null || creditCard.getState().equals(creditCardState)).collect(Collectors.toList());
     });
   }
 
