@@ -1,16 +1,14 @@
 package com.adamkoch.garmin.model.generated;
 
-import com.adamkoch.garmin.model.Links;
-import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonInclude.Include;
 import com.fasterxml.jackson.annotation.JsonProperty;
+import org.springframework.hateoas.RepresentationModel;
 
 @JsonInclude(Include.NON_NULL)
-public class CardBackgroundCombinedEmbossedItem {
-
-  @JsonProperty("_links")
-  private Links links;
+@JsonIgnoreProperties(ignoreUnknown = true)
+public class CardBackgroundCombinedEmbossedItem extends RepresentationModel {
 
   @JsonProperty("width")
   private String width;
@@ -27,15 +25,6 @@ public class CardBackgroundCombinedEmbossedItem {
 
   public void setHeight(String height) {
     this.height = height;
-  }
-
-  @JsonIgnore
-  public Links getLinks() {
-    return links;
-  }
-
-  public void setLinks(Links links) {
-    this.links = links;
   }
 
   public String getMimeType() {
