@@ -15,18 +15,22 @@ import com.adamkoch.garmin.services.UserService;
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
 import java.util.regex.Pattern;
-import javax.servlet.http.HttpServletResponse;
 import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
+/**
+ * Main (well, only) web controller, responsible for the handling of all requests.
+ *
+ * @author aakoch
+ */
 @RestController
+@RequestMapping("/compositeUsers")
 public class Controller {
 
   private static final Logger LOGGER = getLogger(Controller.class);
@@ -43,15 +47,15 @@ public class Controller {
   @Autowired
   private TokenService tokenService;
 
-  private Pattern creditCardStatePattern = Pattern.compile("[a-zA-Z_]{1,20}");
+  private final Pattern CREDIT_CARD_STATE_PATTERN = Pattern.compile("[a-zA-Z_]{1,20}");
 
-  private Pattern deviceStatePattern = Pattern.compile("[a-zA-Z_]{1,20}");
+  private final Pattern DEVICE_STATE_PATTERN = Pattern.compile("[a-zA-Z_]{1,20}");
 
   public Controller() {
     LOGGER.info("Starting controller");
   }
 
-  @GetMapping(path = "/compositeUsers/{userId}", produces = "application/json")
+  @GetMapping(path = "/{userId}", produces = "application/json")
   public User composite(
       @PathVariable String userId,
       @RequestParam(value = "creditCardState", required = false) String creditCardState,
@@ -118,16 +122,16 @@ public class Controller {
 
   @ExceptionHandler(InternalException.class)
   String handleInternalException(Exception e) {
+    LOGGER.error(e);
     return "I'm sorry, but an internal error has happened. Please contact support.";
   }
 
   private boolean isCreditCardStateValid(final String creditCardState) {
-    return creditCardState != null && !creditCardState.isBlank() && creditCardStatePattern.matcher(creditCardState)
-                                                                                          .matches();
+    return creditCardState != null && !creditCardState.isBlank() && CREDIT_CARD_STATE_PATTERN.matcher(creditCardState).matches();
   }
 
   private boolean isDeviceStateValid(final String deviceState) {
-    return deviceState != null && !deviceState.isBlank() && deviceStatePattern.matcher(deviceState).matches();
+    return deviceState != null && !deviceState.isBlank() && DEVICE_STATE_PATTERN.matcher(deviceState).matches();
   }
 
   private class InternalException extends RuntimeException {
